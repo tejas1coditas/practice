@@ -13,6 +13,9 @@ void main() {
   List<int> l1 = [1, 2, 3, 4, 5, 6, 7, 7, 8, 9, 9];
   print("Set Opeartions");
   print(SetOPS(l1));
+
+  print("record operations");
+  print(Recordops());
 }
 
 List Opslist(List<int> list) {
@@ -50,4 +53,11 @@ Map MapOPS(String s) {
   }
   print("Frequency of C is ${mp['C']}");
   return mp;
+}
+//Records
+
+(String, int) Recordops() {
+  (String, int) record;
+  record = ("Coditas", 1);
+  return record;
 }
