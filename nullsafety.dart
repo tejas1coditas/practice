@@ -1,6 +1,4 @@
-void sum(String x, int y) {
-  print(x);
-}
+
 
 void main() {
   String? s;
