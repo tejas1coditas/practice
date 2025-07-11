@@ -1,5 +1,5 @@
 void main() {
-  Stream<int> st = Func(7);
+  Stream<String> st = Func("Tejas");
 
   st.listen(
     (n) {
@@ -14,9 +14,10 @@ void main() {
   );
 }
 
-Stream<int> Func(int n) async* {
-  for (int i = 0; i <= 5; i++) {
+List<String> list = ["Flutter", "Java" , "CPP" , "PY"];
+Stream<String> Func(String s) async* {
+  for (int i = 0; i <4; i++) {
     await Future.delayed(Duration(seconds: 1));
-    yield i;
+    yield list[i];
   }
 }

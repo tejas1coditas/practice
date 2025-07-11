@@ -1,8 +1,8 @@
 void main() async {
   print("Running");
-  List<String> list = await Future.wait([Func(), Func1()]);
+  List<String> list = await Future.wait([Func(),Func1()]);
 
-  print({list[0] + list[1]});
+  print({list[0]+ list[1]});
   print("Over");
 }
 
