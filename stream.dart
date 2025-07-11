@@ -1,5 +1,5 @@
 void main() {
-  Stream<String> st = Func("Tejas");
+  Stream<String> st = Func("");
 
   st.listen(
     (n) {
