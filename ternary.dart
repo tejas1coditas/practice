@@ -1,5 +1,8 @@
+//typedef and ternary
+typedef S = String;
+
 void main() {
 
-  String s = "FLutter";
+  S s = "FLutter";
   s == "FLutter" ? print("Correct") : print("Galat Jawab");
 }
