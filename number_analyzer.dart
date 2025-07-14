@@ -46,13 +46,17 @@ bool isprime(int n) {
 }
 
 String chkRange(int n) {
-  if (n >= 0 && n <= 10)
-    return ("Small number");
-  else if (n > 10 && n <= 100)
-    return ("medium number");
-  else if (n > 100 && n <= 1000)
-    return ("Large number");
-  else {
-    return "Whoa! Chill, that's too big";
+  switch(n){
+    case>=0 && <=10 :
+    return 'Small Number ';
+
+    case>10 && <=100:
+    return 'Medium Range ';
+
+    case >100 && <=1000:
+    return 'Large Number ';
+
+    default : 
+    return "Whoa! chill , that's too Big";
   }
 }
